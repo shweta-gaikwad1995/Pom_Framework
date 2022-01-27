@@ -1,3 +1,4 @@
+
 package com.crm.qa.pages;
 
 import java.io.IOException;
@@ -13,13 +14,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.util.TestUtil;
+import com.crm.qa.util.WebTextbox;
+import com.crm.qa.util.WebUtilities;
 
 public class AddBank extends TestBase{
 
-	@CacheLookup
-	@FindBy(xpath="//input[@id='bank_name']")
-	WebElement bankname1;
 	
+	/*
 	@CacheLookup
 	@FindBy(xpath="//input[@id='account_name']")
 	WebElement accountname1;
@@ -41,12 +42,14 @@ public class AddBank extends TestBase{
 	@FindBy(xpath="//button[normalize-space()='OK']")
 	WebElement okBtn;
 	
+	*/
 	//Initializing the Page Objects:
 	public AddBank()throws IOException{
 		PageFactory.initElements(driver, this);
+		this.driver = TestBase.driver;
 	}
 	
-
+/*
 	public BanksPage addbankdetail(String bankn,String accname,String accno,String acctype,String ifscco,String micr1) throws IOException
 	{
 		bankname1.sendKeys(bankn);
@@ -62,4 +65,10 @@ public class AddBank extends TestBase{
 		//okBtn.click();
 		return new BanksPage();
 	}
+	*/
+	
+	
+
+
+
 }

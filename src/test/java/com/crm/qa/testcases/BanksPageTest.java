@@ -20,6 +20,7 @@ public class BanksPageTest extends TestBase{
 	
 	public BanksPageTest() throws IOException{
 		super();
+		this.driver = TestBase.driver;
 	}
 	
 
@@ -38,5 +39,7 @@ public class BanksPageTest extends TestBase{
 	public void addbankBtnTest() throws IOException
 	{
 		addbank=bankspage.addBankBtn();
+		bankspage.enterdetail();
+		
 	}
 }

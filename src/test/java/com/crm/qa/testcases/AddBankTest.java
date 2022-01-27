@@ -2,6 +2,7 @@ package com.crm.qa.testcases;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class AddBankTest extends TestBase{
 	BanksPage bankspage;
 	AddBank addbank;
 	String sheetName = "addbank";
-	
+	Logger LOG = Logger.getLogger(AddBankTest.class);
 	public AddBankTest() throws IOException{
 		super();
 	}
@@ -35,8 +36,9 @@ public class AddBankTest extends TestBase{
 		bankspage=new BanksPage();
 		bankspage=homePage.MastersTab();
 		addbank=new AddBank();
+		this.driver = TestBase.driver;
 	}
-	
+	/*
 	
 	@DataProvider
 	public Object[][] getCRMTestData(){
@@ -52,5 +54,11 @@ public class AddBankTest extends TestBase{
 		bankspage=addbank.addbankdetail(bankname, accountholder, accountno, accountype,ifsc_code,micr_code);
 		
 	}
+	*/
 	
+	@Test
+	public void enterbankdetails()
+	{
+		
+	}
 }

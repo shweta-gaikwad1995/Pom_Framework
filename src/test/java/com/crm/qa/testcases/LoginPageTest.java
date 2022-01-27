@@ -10,7 +10,9 @@ import org.testng.annotations.Test;
 import com.crm.qa.base.TestBase;
 
 import com.crm.qa.pages.HomePage1;
+
 import com.crm.qa.pages.LoginPage;
+
 
 public class LoginPageTest extends TestBase{
 	
@@ -21,6 +23,9 @@ public class LoginPageTest extends TestBase{
 	public LoginPageTest() throws IOException{
 		super();
 	}
+	
+	
+	
 	
 	@BeforeMethod
 	public void setUp() throws Exception{
@@ -44,4 +49,11 @@ public class LoginPageTest extends TestBase{
 		LOG.info("Landing on HomePage");
 	}
 	
+	/*
+	@Test(priority=3)
+	public void doLoginTest()
+	{
+		HomePage2 homePage=page.getInstance(LoginPage1.class).doLogin("9876543211", "admin");
+	String headerHome=homePage.getHomePageHeader();
+	}*/
 }
