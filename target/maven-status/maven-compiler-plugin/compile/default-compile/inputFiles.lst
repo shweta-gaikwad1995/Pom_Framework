@@ -1,7 +1,12 @@
 C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\pages\BanksPage.java
+C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\qa\AllureReportListener\TestAllureListener.java
+C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\util\WebUtilities.java
 C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\pages\HomePage1.java
-C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\util\EventHandler.java
+C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\util\WebTextbox.java
 C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\pages\AddBank.java
 C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\pages\LoginPage.java
+C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\qa\ExtentReportListener\ExtentReporterNG.java
 C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\util\TestUtil.java
 C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\base\TestBase.java
+C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\util\WebEventListener.java
+C:\Users\admin\eclipse-workspace\HybridFramework\src\main\java\com\crm\qa\pages\WebTableRowColumn.java

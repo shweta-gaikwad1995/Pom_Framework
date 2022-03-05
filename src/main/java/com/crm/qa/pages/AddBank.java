@@ -19,8 +19,14 @@ import com.crm.qa.util.WebUtilities;
 
 public class AddBank extends TestBase{
 
+	AddBank addbank;
 	
-	/*
+	
+	@CacheLookup
+	@FindBy(xpath="//input[@id='bank_name']")
+	WebElement bankname1;
+	
+	
 	@CacheLookup
 	@FindBy(xpath="//input[@id='account_name']")
 	WebElement accountname1;
@@ -42,14 +48,18 @@ public class AddBank extends TestBase{
 	@FindBy(xpath="//button[normalize-space()='OK']")
 	WebElement okBtn;
 	
-	*/
+	
 	//Initializing the Page Objects:
 	public AddBank()throws IOException{
 		PageFactory.initElements(driver, this);
 		this.driver = TestBase.driver;
 	}
 	
-/*
+
+	
+	
+	
+	
 	public BanksPage addbankdetail(String bankn,String accname,String accno,String acctype,String ifscco,String micr1) throws IOException
 	{
 		bankname1.sendKeys(bankn);
@@ -62,10 +72,10 @@ public class AddBank extends TestBase{
 		submit.click();
 		TestUtil testutil=new TestUtil();
 		 new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(okBtn)).click();;
-		//okBtn.click();
+		okBtn.click();
 		return new BanksPage();
 	}
-	*/
+	
 	
 	
 

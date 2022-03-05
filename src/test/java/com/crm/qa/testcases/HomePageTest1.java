@@ -33,14 +33,14 @@ public class HomePageTest1 extends TestBase{
 	@Test(priority=1)
 	public void validatetitlehome()
 	{
-	
+		extentTest = extent.startTest("BhimanHomeTitleTest");
 		String title = homePage.validateHomePageTitle();
 	}
 	
 	@Test(priority=2)
 	public void MastersTabHover() throws IOException
 	{
-	
+		extentTest = extent.startTest("MastersTab");
 		bankspage=homePage.MastersTab();
 	}
 	

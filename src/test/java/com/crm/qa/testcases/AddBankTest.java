@@ -36,9 +36,10 @@ public class AddBankTest extends TestBase{
 		bankspage=new BanksPage();
 		bankspage=homePage.MastersTab();
 		addbank=new AddBank();
+		//addbank=bankspage.addBankBtn();
 		this.driver = TestBase.driver;
 	}
-	/*
+
 	
 	@DataProvider
 	public Object[][] getCRMTestData(){
@@ -54,11 +55,13 @@ public class AddBankTest extends TestBase{
 		bankspage=addbank.addbankdetail(bankname, accountholder, accountno, accountype,ifsc_code,micr_code);
 		
 	}
-	*/
-	
-	@Test
-	public void enterbankdetails()
+
+
+	@Test(priority=1,enabled=false)
+	public void enterbankdetails() throws IOException
 	{
-		
+		addbank=bankspage.addBankBtn();
+	
 	}
+	
 }

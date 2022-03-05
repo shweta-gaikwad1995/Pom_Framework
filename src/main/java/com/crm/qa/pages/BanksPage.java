@@ -23,19 +23,13 @@ public class BanksPage extends TestBase{
 	
 	@CacheLookup
 	@FindBy(xpath="//input[@id='bank_name']")
-public  WebElement SearchInputTxtBox;
+    public  WebElement SearchInputTxtBox;
 	
 	
 	
 	
 	
-	
-	
-	
-
-	
-
-			//Initializing the Page Objects:
+	//Initializing the Page Objects:
 			public BanksPage()throws IOException{
 				PageFactory.initElements(driver, this);
 				this.driver = TestBase.driver;

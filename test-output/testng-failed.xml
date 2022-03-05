@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.AddBankTest">
+      <class name="com.crm.qa.testcases.HomePageTest1">
         <methods>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="enterbankdetails"/>
+          <include name="MastersTabHover"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.AddBankTest -->
+      </class> <!-- com.crm.qa.testcases.HomePageTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
