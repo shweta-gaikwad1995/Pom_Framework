@@ -4,7 +4,7 @@
 
 
 <listeners>
-		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	
 		<listener class-name="com.qa.AllureReportListener.TestAllureListener" />
 
 	</listeners>

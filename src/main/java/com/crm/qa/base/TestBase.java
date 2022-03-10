@@ -70,17 +70,12 @@ public class TestBase {
 			String browserName = prop.getProperty("browser");
 			
 			if(browserName.equals("chrome")){
-				//System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+				
 			WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(); 
 		
 			}
 		
-			e_driver = new EventFiringWebDriver(driver);
-			// Now create object of EventListerHandler to register it with EventFiringWebDriver
-			eventListener = new WebEventListener();
-			e_driver.register(eventListener);
-			driver = e_driver;
 			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -114,6 +109,9 @@ public class TestBase {
 		
 
 //=======================Exetent report		
+	
+		
+		
 		@BeforeTest
 		public void setExtent(){
 			extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
@@ -125,12 +123,16 @@ public class TestBase {
 		
 		}
 		
+		
+		
+		
+		
 		@AfterTest
 		public void endReport(){
 			extent.flush();
 			extent.close();
 		}
-		
+	
 		public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
 			String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 			TakesScreenshot ts = (TakesScreenshot) driver;
@@ -144,7 +146,7 @@ public class TestBase {
 			return destination;
 		}
 		
-		
+	
 		@AfterMethod
 		public void tearDown(ITestResult result) throws IOException{
 			
