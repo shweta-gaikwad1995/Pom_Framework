@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
@@ -11,6 +12,7 @@ import com.crm.qa.pages.BanksPage;
 import com.crm.qa.pages.HomePage1;
 import com.crm.qa.pages.LoginPage;
 
+@Listeners(Listener_Demo.ListenerTest.class)	
 public class HomePageTest1 extends TestBase{
 	LoginPage loginPage;
 	HomePage1 homePage;

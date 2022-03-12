@@ -2,35 +2,35 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-10T17:45:25 IST" name="Default suite" finished-at="2022-03-10T17:45:35 IST" duration-ms="9246">
+  <suite started-at="2022-03-12T13:38:32 IST" name="Default suite" finished-at="2022-03-12T13:38:40 IST" duration-ms="7390">
     <groups>
     </groups>
-    <test started-at="2022-03-10T17:45:25 IST" name="Default test" finished-at="2022-03-10T17:45:35 IST" duration-ms="9246">
+    <test started-at="2022-03-12T13:38:32 IST" name="Default test" finished-at="2022-03-12T13:38:40 IST" duration-ms="7390">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@2b329bbd]" started-at="2022-03-10T17:45:25 IST" name="setExtent" finished-at="2022-03-10T17:45:26 IST" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@784c5ef5]" started-at="2022-03-12T13:38:32 IST" name="setExtent" finished-at="2022-03-12T13:38:33 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@2b329bbd]" started-at="2022-03-10T17:45:26 IST" name="setUp" finished-at="2022-03-10T17:45:33 IST" duration-ms="6894" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@784c5ef5]" started-at="2022-03-12T13:38:33 IST" name="setUp" finished-at="2022-03-12T13:38:39 IST" duration-ms="5807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@2b329bbd]" started-at="2022-03-10T17:45:33 IST" name="loginTest" finished-at="2022-03-10T17:45:33 IST" duration-ms="580" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@784c5ef5]" started-at="2022-03-12T13:38:39 IST" name="loginPageTitleTest" description="verifying login page title test" finished-at="2022-03-12T13:38:39 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@2b329bbd]" started-at="2022-03-10T17:45:34 IST" name="tearDown" finished-at="2022-03-10T17:45:34 IST" duration-ms="690" status="PASS">
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@784c5ef5]" started-at="2022-03-12T13:38:39 IST" name="tearDown" finished-at="2022-03-12T13:38:39 IST" duration-ms="689" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@2b329bbd] output={null}]]]>
+                <![CDATA[[TestResult name=loginPageTitleTest status=SUCCESS method=LoginPageTest.loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@784c5ef5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@2b329bbd]" started-at="2022-03-10T17:45:34 IST" name="endReport" finished-at="2022-03-10T17:45:35 IST" duration-ms="456" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@784c5ef5]" started-at="2022-03-12T13:38:39 IST" name="endReport" finished-at="2022-03-12T13:38:40 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

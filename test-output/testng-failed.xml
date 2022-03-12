@@ -6,7 +6,10 @@
       <class name="com.crm.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+          <include name="loginPageTitleTest"/>
+          <include name="endReport"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>

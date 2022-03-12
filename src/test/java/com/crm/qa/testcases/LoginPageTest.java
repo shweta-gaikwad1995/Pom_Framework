@@ -22,7 +22,8 @@ import io.qameta.allure.Story;
 import com.qa.AllureReportListener.TestAllureListener;
 import com.relevantcodes.extentreports.LogStatus;
 
-@Listeners({TestAllureListener.class})
+//@Listeners({TestAllureListener.class})
+@Listeners(Listener_Demo.ListenerTest.class)
 public class LoginPageTest extends TestBase{
 	
 	LoginPage loginPage;

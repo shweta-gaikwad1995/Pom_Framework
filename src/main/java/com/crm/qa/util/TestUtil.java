@@ -36,9 +36,10 @@ public class TestUtil {
 
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/ExtentReport/" + "/Screenshots/"+ System.currentTimeMillis() + ".png"));
-		
+		//String currentDir = System.getProperty("user.dir");
+		//FileUtils.copyFile(scrFile, new File(currentDir + "/ExtentReport/" + "/Screenshots/"+ System.currentTimeMillis() + ".png"));
+		File trg=new File(".\\WebeveListenerScreenshots\\event.testng");
+		FileUtils.copyFile(scrFile, trg);
 	}
 
 
