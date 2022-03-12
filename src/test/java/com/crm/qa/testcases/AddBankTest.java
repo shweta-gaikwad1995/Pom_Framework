@@ -57,7 +57,7 @@ public class AddBankTest extends TestBase{
 	}
 
 
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void enterbankdetails() throws IOException
 	{
 		addbank=bankspage.addBankBtn();

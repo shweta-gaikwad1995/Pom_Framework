@@ -38,6 +38,7 @@ public class BanksPageTest extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void addbankBtnTest() throws IOException
 	{
+		extentTest = extent.startTest("AddBankDetails");
 		addbank=bankspage.addBankBtn();
 		bankspage.enterdetail();
 		

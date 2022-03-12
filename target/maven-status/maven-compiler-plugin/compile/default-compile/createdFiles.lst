@@ -1,12 +1,13 @@
 com\crm\qa\pages\HomePage1.class
 com\crm\qa\pages\AddBank.class
 com\crm\qa\pages\LoginPage.class
+com\crm\qa\pages\GetScreenshot.class
 com\crm\qa\util\WebUtilities.class
 com\crm\qa\base\TestBase.class
 com\crm\qa\util\TestUtil.class
+Listener_Demo\ListenerTest.class
 com\crm\qa\pages\BanksPage.class
 com\crm\qa\pages\WebTableRowColumn.class
 com\crm\qa\util\WebEventListener.class
-com\qa\ExtentReportListener\ExtentReporterNG.class
 com\crm\qa\util\WebTextbox.class
 com\qa\AllureReportListener\TestAllureListener.class

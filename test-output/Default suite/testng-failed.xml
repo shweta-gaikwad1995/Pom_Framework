@@ -7,8 +7,8 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="loginTest"/>
           <include name="setExtent"/>
-          <include name="loginPageTitleTest"/>
           <include name="endReport"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->

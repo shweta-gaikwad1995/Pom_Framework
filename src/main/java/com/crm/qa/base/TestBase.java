@@ -18,6 +18,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -135,16 +136,26 @@ public class TestBase {
 		}
 	
 		public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
-			String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+			
+			Date d = new Date();
+			String dateName = d.toString().replace(":", "_").replace(" ", "_");	
+			//String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			// after execution, you could see a folder "FailedTestsScreenshots"
 			// under src folder
-			String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
+			String destination = System.getProperty("user.dir") + "/Extent_FailScreenshots/" + screenshotName + dateName
 					+ ".png";
 			File finalDestination = new File(destination);
 			FileUtils.copyFile(source, finalDestination);
 			return destination;
+	
+		
+		
+			
+			
+		
+			
 		}
 		
 	
@@ -156,6 +167,7 @@ public class TestBase {
 				extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); //to add error/exception in extent report
 				
 				String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+				
 				extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //to add screenshot in extent report
 				//extentTest.log(LogStatus.FAIL, extentTest.addScreencast(screenshotPath)); //to add screencast/video in extent report
 			}
