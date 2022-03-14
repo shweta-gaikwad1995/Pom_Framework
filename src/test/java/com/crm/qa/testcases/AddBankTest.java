@@ -3,6 +3,7 @@ package com.crm.qa.testcases;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -42,7 +43,7 @@ public class AddBankTest extends TestBase{
 
 	
 	@DataProvider
-	public Object[][] getCRMTestData(){
+	public Object[][] getCRMTestData() throws InvalidFormatException{
 		Object data[][] = TestUtil.getTestData(sheetName);
 		return data;
 	}

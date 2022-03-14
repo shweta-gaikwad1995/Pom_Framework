@@ -157,7 +157,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	@Override

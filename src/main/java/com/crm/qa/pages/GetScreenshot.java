@@ -7,6 +7,7 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
@@ -45,4 +46,27 @@ public class GetScreenshot extends TestBase{
 			return destination;
 	 
 	 }
+	 
+	 
+	 
+	 public static String getScreenshot(WebDriver driver)
+		{
+			TakesScreenshot ts=(TakesScreenshot) driver;
+			
+			File src=ts.getScreenshotAs(OutputType.FILE);
+			
+			String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
+			
+			File destination=new File(path);
+			
+			try 
+			{
+				FileUtils.copyFile(src, destination);
+			} catch (IOException e) 
+			{
+				System.out.println("Capture Failed "+e.getMessage());
+			}
+			
+			return path;
+		}
 }

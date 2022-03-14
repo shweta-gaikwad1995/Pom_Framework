@@ -28,7 +28,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.beust.jcommander.converters.PathConverter;
+import com.crm.qa.pages.GetScreenshot;
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -41,8 +43,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Logger logger;
-	public  static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+	
 	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
 	
 	
@@ -77,7 +78,7 @@ public class TestBase {
 				driver = new ChromeDriver(); 
 		
 			}
-		
+			
 			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -102,8 +103,16 @@ public class TestBase {
 			
 		}
 
-
-
+/*
+		@AfterMethod
+		public void tearDown()
+		{
+			driver.close();
+		}
+	*/	
+		
+		
+		
 
 		public static WebDriver getDriver() {
 			return tdriver.get();
@@ -112,7 +121,7 @@ public class TestBase {
 
 //=======================Exetent report		
 	
-		
+	
 		
 		@BeforeTest
 		public void setExtent(){
@@ -127,7 +136,7 @@ public class TestBase {
 		
 		
 		
-		
+	
 		
 		@AfterTest
 		public void endReport(){
@@ -135,6 +144,8 @@ public class TestBase {
 			extent.close();
 		}
 	
+		
+		
 		public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
 			
 			Date d = new Date();
@@ -157,6 +168,8 @@ public class TestBase {
 		
 			
 		}
+	
+	
 		
 	
 		@AfterMethod
@@ -184,5 +197,8 @@ public class TestBase {
 			driver.quit();
 		}
 		
+		
+		
+	   
 	
 }
